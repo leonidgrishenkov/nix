@@ -4,6 +4,12 @@
 curl -L https://nixos.org/nix/install | sh
 ```
 
+To ensure that the necessary environment variables are set, either log in again, or type:
+
+```sh
+. /home/yc-user/.nix-profile/etc/profile.d/nix.sh
+```
+
 # Enable flake feature
 
 Create config folder:
@@ -26,13 +32,13 @@ EOF
 Add flake configuration.
 
 ```sh
-git clone https://github.com/leonidgrishenkov/nix ~/code/
+git clone https://github.com/leonidgrishenkov/nix ~/code/nix
 ```
 
 `cd` into required flake:
 
 ```sh
-cd flake-1
+cd ~/code/nix/flake-1
 ```
 
 Apply:
