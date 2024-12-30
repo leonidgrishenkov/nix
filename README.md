@@ -26,7 +26,7 @@ EOF
 Add flake configuration.
 
 ```sh
-https://github.com/leonidgrishenkov/nix
+git clone https://github.com/leonidgrishenkov/nix ~/code/
 ```
 
 `cd` into required flake:
