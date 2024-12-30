@@ -25,6 +25,16 @@ EOF
 
 Add flake configuration.
 
+```sh
+https://github.com/leonidgrishenkov/nix
+```
+
+`cd` into required flake:
+
+```sh
+cd flake-1
+```
+
 Apply:
 
 ```sh
