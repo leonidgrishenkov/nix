@@ -29,6 +29,7 @@
             pkgs.starship
             pkgs.unzip
             pkgs.fd
+            pkgs.zoxide
           ];
 
           shellHook = ''
@@ -44,6 +45,8 @@
 
             export SHELL=$(which zsh)
             if [ -z "$ZSH_VERSION" ]; then exec zsh; fi
+
+            bat cache --build
           '';
     };
   };
