@@ -30,6 +30,7 @@
             pkgs.unzip
             pkgs.fd
             pkgs.zoxide
+            pkgs.yazi
           ];
 
           shellHook = ''
@@ -41,7 +42,7 @@
                 git clone https://github.com/leonidgrishenkov/dotfiles.git $HOME/code/dotfiles > /dev/null 2>&1
             fi
 
-            stow -d $HOME/code/dotfiles --target=$HOME --stow nvim lazygit zsh bat starship ruff sqlfluff btop --verbose
+            stow -d $HOME/code/dotfiles --target=$HOME --stow nvim lazygit zsh bat starship ruff sqlfluff btop yazi --verbose
 
             export SHELL=$(which zsh)
             if [ -z "$ZSH_VERSION" ]; then exec zsh; fi
