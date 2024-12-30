@@ -31,6 +31,7 @@
             pkgs.fd
             pkgs.zoxide
             pkgs.yazi
+            pkgs.python313
           ];
 
           shellHook = ''
